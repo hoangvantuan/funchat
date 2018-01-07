@@ -1,0 +1,36 @@
+<% include layout/header%>
+<div class="demo-layout-transparent mdl-layout mdl-js-layout" id="app">
+	<header class="mdl-layout__header mdl-layout__header--transparent">
+		<div class="mdl-layout__header-row">
+			<!-- Title -->
+			<span class="mdl-layout-title">Funchat</span>
+			<!-- Add spacer, to align navigation to the right -->
+			<div class="mdl-layout-spacer"></div>
+			<!-- Navigation -->
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link btn-login" href="#">Login</a>
+				<a class="mdl-navigation__link btn-signup" href="#">Signup</a>
+			</nav>
+		</div>
+	</header>
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+	<!-- Content -->
+	<main class="mdl-layout__content">
+		
+	</main>
+	<!-- Footer -->
+	
+	<% include layout/footer%>
+	<!-- Login form -->
+	<% include layout/dialog-login%>
+	<!-- Signup form -->
+	<% include layout/dialog-signup%>
+</div>

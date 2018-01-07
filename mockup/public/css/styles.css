@@ -1,0 +1,122 @@
+.demo-layout-transparent {
+	background: url('../img/background.jpg') center / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header, .demo-layout-transparent .mdl-layout__drawer-button {
+
+	/* This background is dark, so we set text to white. Use 87% black instead if
+	   your background is light. */
+	color: white;
+}
+
+.footer {
+	background-color: black;
+	color: gray;
+}
+
+.dialog-login, .dialog-signup {
+	width: 400px;
+}
+
+.btn-facebook, .btn-google {
+	color: white !important;
+}
+
+.hr-login {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.close {
+	font-size: 1rem !important;
+}
+
+.profile {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+}
+
+.demo-card-square > .mdl-card__title {
+	color: #fff;
+	background: url('../img/profile_img.png') center / cover;
+	opacity: 0.8
+}
+
+.online-status, .message_box, .chat_box {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.page_pagination {
+	width: 100%;
+}
+
+.pagination {
+	display: block;
+	width: 0px;
+	margin: 0 auto;
+}
+
+.mdl-list__item:hover {
+	background-color: #cdd8d9;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.list_friends {
+	padding-top: 10px;
+	padding-left: 10px;
+	display: inline;
+}
+
+.message_box {
+	overflow: scroll;
+}
+
+.typing_input {
+	width: 85%;
+}
+
+.typing, .message_list {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.message_list {
+	height: 65%;
+	overflow: scroll;
+}
+
+.message_time {
+	opacity: 0.5;
+	font-size: 0.7em;
+}
+
+.chat {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: 10px;
+}
+
+.message_setting {
+	padding-top: 15px;
+	height: 40px;
+}
+
+.message_setting_btn {
+	margin-right: 10px;
+}
+
+.group_name, .group_name h5{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.group_name_title_edit_icon .material-icons{
+	font-size: 0.6em;
+}
+
+.notifies, .notifies:hover{
+	color: white;
+}

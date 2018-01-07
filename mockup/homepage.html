@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home page</title>
+		<!-- CSS -->
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+		<link rel="stylesheet" type="text/css" href="public/css/styles.css">
+		
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="public/js/styles.js" type="text/javascript" charset="utf-8" async defer></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Funny chat</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target=".modal-login">Login</a></li>
+						<li><a href="#" title="">Signup</a></li>
+					</ul>
+					</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<!-- Login form -->
+				<dialog class="mdl-dialog dialog-login">
+				<h4 class="mdl-dialog__title">Login</h4>
+				<div class="mdl-dialog__content">
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="email">
+							<label class="mdl-textfield__label" for="email">Email...</label>
+						</div>
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="password" id="password">
+							<label class="mdl-textfield__label" for="password">Password...</label>
+						</div>
+						<label class = "mdl-checkbox mdl-js-checkbox" for = "remember">
+							<input type = "checkbox" id = "remember" class = "mdl-checkbox__input">
+							<span class = "mdl-checkbox__label">Remember me</span>
+						</label>
+					</form>
+				</div>
+				<div class="mdl-dialog__actions">
+					<button type="button" class="mdl-button">Login</button>
+					<button type="button" class="mdl-button close">Close</button>
+				</div>
+				<br>
+				<hr class="hr-login">
+				<br>
+				<a class="btn btn-block btn-social btn-facebook">
+					<span class="fa fa-facebook"></span> Sign in with Facebook
+				</a>
+				<a class="btn btn-block btn-social btn-google">
+					<span class="fa fa-google"></span> Sign in with Google
+				</a>
+				</dialog>
+				<div class="modal fade modal-login" tabindex="-1" role="dialog" aria-labelledby="LoginModal">
+					<div class="modal-dialog modal-sm" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Login</h4>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+										<div class="col-sm-10">
+											<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox"> Remember me
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="btn btn-default">Sign in</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- Signup form -->
+				<dialog class="mdl-dialog dialog-signup">
+				<h4 class="mdl-dialog__title">Signup</h4>
+				<div class="mdl-dialog__content">
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="email">
+							<label class="mdl-textfield__label" for="email">Email...</label>
+						</div>
+					</form>
+				</div>
+				<div class="mdl-dialog__actions">
+					<button type="button" class="mdl-button">Signup</button>
+					<button type="button" class="mdl-button close">Close</button>
+				</div>
+				</dialog>
+			</body>
+		</html>
